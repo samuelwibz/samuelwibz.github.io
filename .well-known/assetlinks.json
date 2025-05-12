@@ -1,11 +1,10 @@
 [
-    {
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "au.com.collageapp",
-        "sha256_cert_fingerprints": ["91:22:B4:97:E4:86:98:E7:D7:56:DE:21:39:73:2F:59:DF:71:EB:9F:9F:D6:15:67:EE:60:77:41:32:63:09:C4"]
-      }
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "au.com.collageapp",
+      "sha256_cert_fingerprints": ["90:C2:D9:96:37:28:00:27:C8:AD:B0:33:E2:DA:9E:5C:3B:1D:2E:D8:1C:D2:E5:AD:FC:04:F2:2A:3F:B1:4D:8A"]
     }
-  ]
-  
+  }
+]
