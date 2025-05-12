@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "au.com.collageapp",
+      "sha256_cert_fingerprints": ["91:22:B4:97:E4:86:98:E7:D7:56:DE:21:39:73:2F:59:DF:71:EB:9F:9F:D6:15:67:EE:60:77:41:32:63:09:C4"]
+    }
+  }
+]
