@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Redirecting to Collage App</title>
 </head>
+
 <body>
   <h1>Email Verified 🎉</h1>
   <p>You’ll be redirected to the app shortly...</p>
@@ -16,10 +18,11 @@
     // Redirect to your app via custom scheme
     if (userId) {
       // window.location.href = `collage://verify?userId=${userId}`;
-      window.location.href = `https://samuelwibz.github.io/verify/${userId}`;
+      window.location.href = `https://samuelwibz.github.io/verify?userId=${userId}`;
     } else {
       document.body.innerHTML = "<p>Missing userId</p>";
     }
   </script>
 </body>
+
 </html>
