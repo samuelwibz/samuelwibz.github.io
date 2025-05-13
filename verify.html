@@ -15,7 +15,8 @@
 
     // Redirect to your app via custom scheme
     if (userId) {
-      window.location.href = `collage://verify?userId=${userId}`;
+      // window.location.href = `collage://verify?userId=${userId}`;
+      window.location.href = `https://samuelwibz.github.io/verify/${userId}`;
     } else {
       document.body.innerHTML = "<p>Missing userId</p>";
     }
