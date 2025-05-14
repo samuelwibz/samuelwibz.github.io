@@ -10,17 +10,31 @@
 <body>
   <h1>Email Verified 🎉</h1>
   <p>You’ll be redirected to the app shortly...</p>
+
   <script>
-    // Parse userId from URL
     const urlParams = new URLSearchParams(window.location.search);
     const userId = urlParams.get('userId');
 
-    // Redirect to your app via custom scheme
-    if (userId) {
-      // window.location.href = `collage://verify?userId=${userId}`;
-      window.location.href = `https://samuelwibz.github.io/verify?userId=${userId}`;
-    } else {
+    if (!userId) {
       document.body.innerHTML = "<p>Missing userId</p>";
+    } else {
+      const userAgent = window.navigator.userAgent || '';
+      const isIOS = /iPad|iPhone|iPod/.test(userAgent);
+      const isAndroid = /Android/.test(userAgent);
+
+      const iosURL = `collage://verify?userId=${userId}`;
+      const androidURL = `https://samuelwibz.github.io/verify?userId=${userId}`;
+
+      setTimeout(() => {
+        if (isIOS) {
+          window.location.href = iosURL;
+        } else if (isAndroid) {
+          window.location.href = androidURL;
+        } else {
+          // Default to iOS custom scheme fallback
+          window.location.href = iosURL;
+        }
+      }, 1000);
     }
   </script>
 </body>
